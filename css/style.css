@@ -1,37 +1,90 @@
 /* Global Styles */
+
 * {
     box-sizing: border-box;
-  }
-  html,
-  body {
+}
+
+html,
+body {
+    position: relative;
     height: 100%;
-  }
+    width: 100%;
+    font-size: 16px;
+    background-image: url("../images/paper.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .container {
     width: 85%;
+}
 
+/* ##### Global Styles #### */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #eee;
+    text-shadow: 0.125rem 0.125rem 0.125rem #333;
+}
+
+.mb2 {
+    margin-bottom: 2rem;
+}
+
+/* ##### Navbar #####*/
+
+.navbar {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.bg-navbar {
+    background-color: #600;
+}
+
+.navbar-color a{
+    color: #cea036;
 }
 
 
-/* ##### Navbar #####*/
+.navbar-color a:hover{
+    color: #9C7211;
+}
+
+.navbar-color .navbar-nav .show > .nav-link,
+.navbar-color .navbar-nav .active > .nav-link,
+.navbar-color .navbar-nav .nav-link.show,
+.navbar-color .navbar-nav .nav-link.active {
+    box-shadow: inset 0 -0.125rem;
+}
+
 .navbar-brand {
-    font-family: 'Tangerine', cursive;
+    height: 7.5vh;
+}
+
+.navbar-brand:hover {
+    opacity: 0.8;
+}
+
+
+.navbar-brand img {
+    height: 7vh;
 }
 
 
 /* ##### Hero Image ##### */
+
 .hero-image {
-    /* The image used */
-    background-image: url(https://picsum.photos/g/1920/910);
-    /* Set a specific height */
-    height: 100%;
-    /* Position and center the image to scale nicely on all screens */
+    background-image: url(https://picsum.photos/g/1920/910/?random);
+    height: 92.5vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
-
-/* Place text in the middle of the image */
 
 .hero-text {
     text-align: center;
@@ -39,18 +92,84 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #eee;
+    text-shadow: 0.125rem 0.125rem 0.125rem #333;
+
 }
 
-/* ##### Product Page ##### */
+/* ##### Section Header ##### */
+
+.section-header {
+    padding-top: 7.5vh;
+    height: 19.5rem;
+    background-color: #600;
+    border: 0.125rem solid #cea036;
+    border-right: none;
+    border-left: none;
+}
+
+.section-header h1{
+    font-family: 'Tangerine', cursive;
+    width: 100%;
+    font-size: 10rem;
+    color: #cea036;
+
+}
+
+/* ##### Product Section ##### */
 .product-cards {
-    margin-top: 3em;
+    margin-bottom: 5rem;
 }
 
 .product-cards .card {
-    box-shadow: 0.125em 0.125em 0.25em #444;
+    box-shadow: 0.125rem 0.125rem 0.25rem #444;
+    background-color: #600;
 }
 
 .product-cards .card:hover {
-    box-shadow: 0.25em 0.25em 0.5em #444;
+    box-shadow: 0.25rem 0.25rem 0.5rrem #444;
 }
+
+.product-cards .card-title {
+    font-size: 2.25rem;
+    color: #cea036;
+}
+
+.product-cards .svg-inline--fa {
+    color: #343434;
+}
+
+.product-cards .view-btn {
+    width: 50%;
+    vertical-align: middle;
+    background-color: #cea036;
+}
+
+.product-cards .view-btn:hover {
+    background-color: #9C7211;
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .product-cards .view-btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+}
+
+/* Extra large devices (large desktops)
+No media query since the extra-large breakpoint has no upper bound on its width */
