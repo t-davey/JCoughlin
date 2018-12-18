@@ -37,6 +37,7 @@ h5 {
 .navbar {
     font-size: 1.25rem;
     font-weight: 600;
+    
 }
 
 .bg-navbar {
@@ -99,7 +100,7 @@ h5 {
 
 .section-header {
     padding-top: 7.5vh;
-    height: 19.5rem;
+    height: 20rem;
     background-color: #600;
     border: 0.125rem solid #cea036;
     border-right: none;
